@@ -4,5 +4,6 @@ module.exports.run = async (client, message, args) => {
   m.edit(`<a:loading:460475336736374787> Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
 }
 module.exports.help = {
-  name: "ping"
+  name: "ping",
+  category: "info"
 }
